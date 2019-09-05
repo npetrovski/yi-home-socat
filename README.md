@@ -1,0 +1,1 @@
+Compile `socat` for YI Home Camera
