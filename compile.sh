@@ -25,6 +25,7 @@ cat config.old \
  | sed 's/CSIZE_SHIFT.*/CSIZE_SHIFT 4/' \
  | sed 's/\/\* #undef HAVE_OPENPTY \*\//#define HAVE_OPENPTY 1/' \
  | sed 's/\/\* #undef HAVE_GRANTPT \*\//#define HAVE_GRANTPT 1/' \
+ | sed 's/\/\* #undef WITH_UNIX \*\//#define WITH_UNIX 1/' \
  > config.h
 
 # Enable openpty() in Makefile
